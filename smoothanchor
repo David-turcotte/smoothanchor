@@ -1,0 +1,13 @@
+//anchor smooth scroll
+
+jQuery('.ancre').on('click', function() { 
+
+    var page = jQuery('#'+jQuery(this).attr('href').split('#')[1]); 
+
+    var speed = 450; 
+
+    jQuery('html, body').animate( { scrollTop: jQuery(page).offset().top }, speed ); // Go
+
+    return false;
+
+});
